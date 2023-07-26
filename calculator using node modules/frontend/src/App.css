@@ -1,0 +1,98 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #6e6d6d;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background-color: #ecebeb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.calculator-name {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #034aff6c;
+}
+
+.display {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: right;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  font-size: 24px;
+  padding: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #e4e4e4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #d0d0d0;
+}
+
+button:active {
+  background-color: #c2c2c2;
+}
+
+button.c,
+button.ac {
+  background-color: #ff9f0a; /* Orange color for C and AC buttons */
+  color: #fff;
+}
+
+button.c:hover,
+button.ac:hover {
+  background-color: #ff9100;
+}
+
+button.c:active,
+button.ac:active {
+  background-color: #ff8600;
+}
+
+button.equal {
+  background-color: #f00; /* Red color for the = button */
+  color: #fff;
+}
+
+button.equal:hover {
+  background-color: #d30000;
+}
+
+button.equal:active {
+  background-color: #b30000;
+}
